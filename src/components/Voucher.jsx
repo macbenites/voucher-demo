@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import IconAndroid from "../assets/Android_Logo.png";
-import IconIos from "../assets/Apple_Logo.png";
+import Icons from "../assets/googleplay-applestore.png";
 
 export const Voucher = () => {
   return (
@@ -42,8 +41,7 @@ export const Voucher = () => {
         </View>
       </View>
       <View style={styles.images}>
-        <Image source={IconAndroid} style={styles.image} />
-        <Image source={IconIos} style={styles.image} />
+        <Image source={Icons} style={styles.image} />
       </View>
     </SafeAreaView>
   );
@@ -53,14 +51,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    paddingHorizontal: 10,
+    paddingHorizontal: 18,
     paddingVertical: 5,
-    backgroundColor: "red",
   },
 
   content: {
     marginVertical: 30,
-
     width: "100%",
     height: "80%",
     backgroundColor: "white",
@@ -105,8 +101,8 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: "50%",
-    height: 80,
+    width: "100%",
+    height: 100,
     resizeMode: "contain",
   },
 });
